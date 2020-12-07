@@ -1,0 +1,15 @@
+ type _Transfer @entity {
+  id: ID!
+  count: BigInt!
+  _from: Bytes! # address
+  _to: Bytes! # address
+  _value: BigInt!
+}
+
+type _Approval @entity {
+  id: ID!
+  count: BigInt!
+  _owner: Bytes! # address
+  _spender: Bytes! # address
+  _value: BigInt!
+}
